@@ -1,14 +1,11 @@
 
 import './App.css';
+import Landing_page from './components/landing_page/landing_page';
 
 import {Link, Route, Routes} from 'react-router-dom'
 function App() {
   return (
-    <div className="App ">
-      <Link to="/login">
-        <button>login</button>
-      </Link>
-    </div>
+    <Landing_page />
   );
 }
 
