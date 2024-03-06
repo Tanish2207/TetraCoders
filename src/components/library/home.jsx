@@ -17,7 +17,7 @@ const [error,setError] = useState(null)
                 setIsPending(false);
                 setContent(content);
                 setError(null)
-            })0.1
+            })
             .catch(err =>{
                 setIsPending(false)
               setError(err.message)
