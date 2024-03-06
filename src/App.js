@@ -5,14 +5,14 @@ import Landing_page from './components/landing_page/landing_page';
 import Student_dashboard from './components/student-dashboard/student-dashboard';
 
 import Navbar from './components/library/Navbar.jsx';
-import Home from './components/library/home.jsx';
-import Studentregistration from './components/login/registrationpage1.jsx';
+
+
 import data from './components/calendar/DataBase/data.jsx';
 import Home from './components/library/home';
 import Events from './components/calendar/Events/Events';
 import Studentregistration from './components/login/registrationpage1';
 import Experience from './components/library/inexpe';
-import Landing_page from './components/landing_page/landing_page';
+
 import Collegeregistration from './components/login/registrationpage3';
 import Companyregistration from './components/login/registrationpage2';
 import {  Router, Route, Routes, BrowserRouter } from 'react-router-dom';
