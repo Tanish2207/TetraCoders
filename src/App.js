@@ -1,11 +1,12 @@
 
 import './App.css';
 import Landing_page from './components/landing_page/landing_page';
+import Student_dashboard from './components/student-dashboard/student-dashboard';
 
-import {Link, Route, Routes} from 'react-router-dom'
 function App() {
   return (
-    <Landing_page />
+    // <Landing_page />
+    <Student_dashboard />
   );
 }
 
