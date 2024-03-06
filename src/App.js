@@ -18,7 +18,7 @@ function App() {
           Learn React
         </a>
       </header>
-      <p className="text-red-700">Lorem Ipsum</p>
+      
     </div>
   );
 }
