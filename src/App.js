@@ -6,7 +6,7 @@ function App() {
     <div className="App ">
       <header className="App-header">
         
-        <p className="bg-black">
+        <p w3-card-4 className="bg-black">
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
