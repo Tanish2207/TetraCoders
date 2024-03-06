@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
@@ -17,9 +17,8 @@ function App() {
         >
           Learn React
         </a>
-        
       </header>
-      
+      <p className="text-red-700">Lorem Ipsum</p>
     </div>
   );
 }
