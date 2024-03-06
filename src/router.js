@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-import studentlogin from './components/login/loginpages';
+import studentlogin from './components/login/registrationpage1';
 
 const Routes = () => (
  <Switch>
