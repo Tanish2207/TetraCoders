@@ -3,27 +3,35 @@ const Home = () => {
 
     const [content, setContent] = useState(null);
     const [isPending, setIsPending] = useState(true);
-
+const [error,setError] = useState(null)
     useEffect(() => {
 
         fetch('http://localhost:8000/content')
             .then(res => {
                 return res.json();
+                if(!res.ok){
+                    throw Error('unable to fetch data')
+                }
             })
             .then(content => {
                 setIsPending(false);
                 setContent(content);
+                setError(null)
+            })0.1
+            .catch(err =>{
+                setIsPending(false)
+              setError(err.message)
             })
-    })
+    },[])
 
         return (
             <div className=" w3-margin-top w3-container">
                 <input class="w3-input w3-border w3-padding" type="text" placeholder="Search contributions"></input>
                 <h1>Top contributions</h1>
+                {error && <div>{error}</div>}
                 {isPending && <div>Loading...</div>}
                 {content && content.map(content => (
                     <div className="w3-hover-shadow w3-margin" key={content.id} >
-
                         <header className="w3-container w3-blue">
                             <h3>Contributed by {content.username}</h3>
                         </header>
