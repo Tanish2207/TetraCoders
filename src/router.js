@@ -5,10 +5,10 @@ import HomeLibrary from './components/library/home';
 
 const Routes = () => (
  <Switch>
-    <Route exact path="/" component={Home} />
-    <Route path="/about" component={About} />
+    
+    
     <Route path = "/components/library" component = {HomeLibrary} />
-    <Route component={NotFound} />
+   
 </Switch>
 
 
