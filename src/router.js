@@ -1,14 +1,18 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-import studentlogin from './components/login/loginpages';
+import studentlogin from './components/login/registrationpage1';
+import HomeLibrary from './components/library/home';
 
 const Routes = () => (
  <Switch>
     
-    <Route path="/login" component={studentlogin} />
+    
+    <Route path = "/components/library" component = {HomeLibrary} />
    
- </Switch>
-);
+</Switch>
 
+
+
+);
 export default Routes;
