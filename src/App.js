@@ -25,14 +25,10 @@ function App() {
   return (
 
     // <Landing_page />
-    <Student_dashboard />
+    // <Student_dashboard />
 
-    <div className="App">
-      {/* <Navbar />
-      <Home /> */}
-      <Events />
+    // <Events />
 
-    </div>
 
   );
 }
