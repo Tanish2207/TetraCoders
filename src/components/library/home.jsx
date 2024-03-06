@@ -1,12 +1,11 @@
 
 const Home = () => {
     return (
-        <div className=" w3-margin-bottom container">
-            <input class="w3-input w3-border w3-padding" type="text" placeholder="Search contributions" id="myInput" onkeyup="myFunction()"></input>
+        <div className=" w3-margin-top w3-container">
+            <input class="w3-input w3-border w3-padding" type="text" placeholder="Search contributions" id="myInput"></input>
             <h1>Top contributions</h1>
-                <div className="w3-container">
 
-                    <div className="w3-hover-card-4">
+                    <div className="w3-hover-shadow">
                         <header className="w3-container w3-blue">
                             <h3>Username</h3>
                         </header>
@@ -21,7 +20,7 @@ const Home = () => {
                         </footer>
                     </div>
                     <br />
-                    <div className="w3-hover-card-4">
+                    <div className="w3-hover-shadow">
                         <header className="w3-container w3-blue">
                             <h3>Username</h3>
                         </header>
@@ -37,7 +36,7 @@ const Home = () => {
                     </div>
                     <br />
 
-                    <div className="w3-hover-card-4">
+                    <div className="w3-hover-shadow">
                         <header className="w3-container w3-blue">
                             <h3>Username</h3>
                         </header>
@@ -51,7 +50,6 @@ const Home = () => {
                         </footer>
                     </div>
                     <br />
-                </div>
         </div>
     );
 }

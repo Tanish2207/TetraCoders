@@ -1,13 +1,13 @@
 import 'w3-css/w3.css';
 const Experience = () => {
     return (
-        <div className="w3-margin-bottom-60 container">
+        <div className="w3-margin-top w3-container">
              <input class="w3-input w3-border w3-padding" type="text" placeholder="Search Interview experiences" id="myInput" onkeyup="myFunction()"></input>
-            <div className='top'>
+
                 <div className="w3-container">
                     <h2>Experiences from some Interviwee</h2>
 
-                    <div className="w3-hover-card-4">
+                    <div className="w3-hover-shadow">
                         <header className="w3-container w3-blue">
                             <h3>Username</h3>
                         </header>
@@ -22,7 +22,7 @@ const Experience = () => {
                         </footer>
                     </div>
                     <br />
-                    <div className="w3-hover-card-4">
+                    <div className="w3-hover-shadow">
                         <header className="w3-container w3-blue">
                             <h3>Username</h3>
                         </header>
@@ -38,7 +38,7 @@ const Experience = () => {
                     </div>
                     <br />
 
-                    <div className="w3-hover-card-4">
+                    <div className="w3-hover-shadow">
                         <header className="w3-container w3-blue">
                             <h3>Username</h3>
                         </header>
@@ -53,7 +53,7 @@ const Experience = () => {
                         </footer>
                     </div>
                 </div>
-            </div>
+            <br />
         </div>
 
     );
