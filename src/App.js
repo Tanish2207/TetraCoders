@@ -5,30 +5,48 @@ import Landing_page from './components/landing_page/landing_page';
 import Student_dashboard from './components/student-dashboard/student-dashboard';
 
 import Navbar from './components/library/Navbar.jsx';
-import Home from './components/library/home.jsx';
-import Studentregistration from './components/login/registrationpage1.jsx';
+
+
 import data from './components/calendar/DataBase/data.jsx';
-import Events from './components/calendar/Events/Events.jsx';
+import Home from './components/library/home';
+import Events from './components/calendar/Events/Events';
+import Studentregistration from './components/login/registrationpage1';
+import Experience from './components/library/inexpe';
+import ChatApp from './components/chat/chat.jsx';
+import Collegeregistration from './components/login/registrationpage3';
+import Companyregistration from './components/login/registrationpage2';
+import {  Router, Route, Routes, BrowserRouter } from 'react-router-dom';
 import { useEffect } from 'react';
 
 
 
 function App() {
   useEffect(()=>{
-    // const DATA = JSON.parse(localStorage.getItem('events'));
-    // if(!DATA){
-    //   localStorage.setItem("events", JSON.stringify(data));
-    // }
+    
     localStorage.setItem("events", JSON.stringify(data));
   },[])
 
   return (
 
     // <Landing_page />
-    // <Student_dashboard />
+    
+    <div className="App">
+      <BrowserRouter>
+      <Routes>
+         <Route path="/companyr" element= {<Companyregistration/>} />
+         <Route path="/colleger" element= {<Collegeregistration/>} />
+         <Route path="/studentr" element= {<Studentregistration/>} />
+         <Route path="/events" element= {<Events/>} />
+         <Route path="/" element= {<Landing_page/>} />
 
-    // <Events />
-
+         <Route path="/chat" element= {<ChatApp/>} />
+         <Route path="/exp" element= {<Experience/>} />
+         <Route path="/dashboard" element= {<Student_dashboard/>} />
+         <Route path="/libhome" element= {<Home/>} />
+      </Routes>
+     </BrowserRouter>
+      
+    </div>
 
   );
 }

@@ -49,34 +49,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Add additional styles for light mode */
-.dark-mode .heading_grey {
-  background-color: #1f2937; /* Change background color for dark mode */
-  color: #f3f4f6; /* Change text color for dark mode */
-}
-
-.dark-mode .bg-white {
-  background-color: #1f2937; /* Change background color for dark mode */
-}
-
-.dark-mode .text-blue-500 {
-  color: #60a5fa; /* Change text color for dark mode */
-}
-
-/* Add additional styles for light mode */
-.light-mode .heading_grey {
-  background-color: #f3f4f6; /* Change background color for light mode */
-  color: #111827; /* Change text color for light mode */
-}
-
-.light-mode .bg-white {
-  background-color: #ffffff; /* Change background color for light mode */
-}
-
-.light-mode .text-blue-500 {
-  color: #3b82f6; /* Change text color for light mode */
-}
-
 
 
 
@@ -96,17 +68,7 @@
     background-color: #2563eb; /* Hover background color for buttons in light mode */
   }
   
-  .dark-mode .modalinputs {
-    color: #f3f4f6; /* Text color for dark mode */
-  }
-  
-  .dark-mode .buttondiv button {
-    background-color: #6b7280; /* Background color for buttons in dark mode */
-  }
-  
-  .dark-mode .buttondiv button:hover {
-    background-color: #4b5563; /* Hover background color for buttons in dark mode */
-  }
+ 
   
 
 
