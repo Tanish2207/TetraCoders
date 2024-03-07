@@ -1,4 +1,5 @@
 import React from 'react'
+import Landing_page_second from '../landing-page-second/landing-page-second';
 import './landing_page.css';
 
 
@@ -51,6 +52,8 @@ function Landing_page() {
           </div>
         </div>
       </div>
+    <Landing_page_second />
+
     </div>
   );
 }
