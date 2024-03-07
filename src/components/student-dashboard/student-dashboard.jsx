@@ -3,18 +3,13 @@ import './student-dashboard.css'
 import { useState } from 'react';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';  
- 
 
 
 
 function Student_dashboard() {
    
         const [value, onChange] = useState(new Date());
-        
-
-
- 
-    return (
+        return (
         <div className=''>
             <div className="student-dashboard-cont">
                 <div className="calendar">
@@ -41,16 +36,42 @@ function Student_dashboard() {
                         </div>
                     </div>
                 </div>
+                <div className="chat">
                 
-                <div className="contributions">
-                    <h1>Contributions</h1>
-                   
-                    
+                <div className="companies-visited">
+                    <h2>Companies visiting in upcoming week</h2>
+                    <hr />
+                    <div className="company-logo-cont">
+                        <div className="company-logo">
+                            <img src="/Autodesk-logo.png" alt="" width="34%" />
+                            <p>Autodesk</p>
+                        </div>
+                        <div className="company-logo">
+                            <img src="/Autodesk-logo.png" alt="" width="34%" />
+                            <p>Autodesk</p>
+                        </div><div className="company-logo">
+                            <img src="/Autodesk-logo.png" alt="" width="34%" />
+                            <p>Autodesk</p>
+                        </div><div className="company-logo">
+                            <img src="/Autodesk-logo.png" alt="" width="34%" />
+                            <p>Autodesk</p>
+                        </div><div className="company-logo">
+                            <img src="/Autodesk-logo.png" alt="" width="34%" />
+                            <p>Autodesk</p>
+                        </div><div className="company-logo">
+                            <img src="/Autodesk-logo.png" alt="" width="34%" />
+                            <p>Autodesk</p>
+                        </div><div className="company-logo">
+                            <img src="/Autodesk-logo.png" alt="" width="34%" />
+                            <p>Autodesk</p>
+                        </div>
+                    </div>
                    
                 </div>
                 
             </div>
             
+        </div>
         </div>
     );
 }

@@ -9,7 +9,7 @@ import Events from './components/calendar/Events/Events';
 import Experience from './components/library/inexpe';
 import ChatApp from './components/chat/chat.jsx';
 import Collegeregistration from './components/login/registrationpage3';
-import { Router, Route, Routes, BrowserRouter } from 'react-router-dom';
+import { Router, Route, Routes, BrowserRouter , useLocation} from 'react-router-dom';
 import Recruiter_Dashboard from './components/recruiter-dashboard/recruiter-dashboard';
 import { useEffect } from 'react';
 import Navdash from './components/navbar_dash/navdash.jsx'
@@ -30,7 +30,9 @@ function App() {
   return (
 
      <div>
+       
        <BrowserRouter>
+    
          <Routes>
            <Route path="/colleger" element={<Collegeregistration />} />
            <Route path="/studentr" element={<Studentregistration />} />
@@ -53,6 +55,14 @@ function App() {
      </div>
 
   );
+ }
+  
+ function Navbar_dash(){
+  const location = useLocation();
+  if(location.pathname === '/') {
+    return null;
+  } 
+  return <Navdash />;
  }
  
  export default App;
