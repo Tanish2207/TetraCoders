@@ -1,16 +1,12 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
  
-body{
+.dashboard{
     background-image: url("../../../public/Student-dash-bg.png");
     background-size: cover;
     background-position: top 80% right 0;
 } 
 .student-dashboard-cont {
-    margin: 2rem;
+   
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -20,8 +16,9 @@ body{
 }
 
 .calendar {
+    padding: 1rem;
     background-color: #C0FDFF;
-    width: 60%;
+    
     color: black;
     text-align: center;
     border-radius: 2%;
@@ -34,10 +31,15 @@ body{
     padding: 2rem;
 
     text-align: center;
-    height: 90%;
+    
     border-radius: 1%;
 }
-
+.chat {
+grid-column: 2;
+grid-row: 1/span 1;
+position: relative;
+height: 40%;
+}
 hr {
     border: 2px solid black;
 }
@@ -134,7 +136,7 @@ hr {
     margin-top: 2rem;
 }
 .left{
-    background-color: #1f79e0;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,3 +163,22 @@ hr {
     margin-bottom: .8rem;
     font-weight: 700;
 }
+@media (max-width: 768px) {
+    .student-dashboard-cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .upcoming-interview {
+       order: 2; /* First on mobile */
+    }
+   
+    .companies-visited {
+       order: 3; /* Second on mobile */
+    }
+   
+    .calendar {
+       order: 1; /* Third on mobile */
+    }
+   }
