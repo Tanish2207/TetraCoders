@@ -7,20 +7,14 @@ import ChatApp from '../chat/chat';
 import { IoChatboxEllipsesOutline } from "react-icons/io5"; 
 
 
-const PopUpComponent = ({ onClose }) => {
-    return (
-        <ChatApp />
-       
-    );
-   };
+
 function Student_dashboard() {
    
         const [value, onChange] = useState(new Date());
-        const [isPopUpVisible, setIsPopUpVisible] = useState(false);
+        
 
- const togglePopUp = () => {
-    setIsPopUpVisible(!isPopUpVisible);
- };
+
+ 
     return (
         <div className=''>
             <div className="student-dashboard-cont">
@@ -48,38 +42,11 @@ function Student_dashboard() {
                         </div>
                     </div>
                 </div>
-                <div className="chat">
-                 <button onClick={togglePopUp}><IoChatboxEllipsesOutline size={30} color='cyan'/></button>
-      {isPopUpVisible && <PopUpComponent onClose={togglePopUp} />}
-      </div>
-                <div className="companies-visited">
-                    <h2>Companies visiting in upcoming week</h2>
-                    <hr />
-                    <div className="company-logo-cont">
-                        <div className="company-logo">
-                            <img src="/Autodesk-logo.png" alt="" width="34%" />
-                            <p>Autodesk</p>
-                        </div>
-                        <div className="company-logo">
-                            <img src="/Autodesk-logo.png" alt="" width="34%" />
-                            <p>Autodesk</p>
-                        </div><div className="company-logo">
-                            <img src="/Autodesk-logo.png" alt="" width="34%" />
-                            <p>Autodesk</p>
-                        </div><div className="company-logo">
-                            <img src="/Autodesk-logo.png" alt="" width="34%" />
-                            <p>Autodesk</p>
-                        </div><div className="company-logo">
-                            <img src="/Autodesk-logo.png" alt="" width="34%" />
-                            <p>Autodesk</p>
-                        </div><div className="company-logo">
-                            <img src="/Autodesk-logo.png" alt="" width="34%" />
-                            <p>Autodesk</p>
-                        </div><div className="company-logo">
-                            <img src="/Autodesk-logo.png" alt="" width="34%" />
-                            <p>Autodesk</p>
-                        </div>
-                    </div>
+                
+                <div className="contributions">
+                    <h1>Contributions</h1>
+                   
+                    
                    
                 </div>
                 

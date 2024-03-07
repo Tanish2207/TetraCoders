@@ -13,7 +13,7 @@ function Landing_page() {
                 <img src="/logo-img.png" width="10px" />
               </li>
 
-              <li className="links"><a href="/companyr">Employer</a></li>
+             
               <li className="links"><a href="/colleger">University</a></li>
               <li className="links"><a href="/studentr">Student</a></li>
               <li className="links"><a href="#projects-cont">Login</a></li>
