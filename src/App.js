@@ -16,6 +16,7 @@ import ChatApp from './components/chat/chat.jsx';
 import Collegeregistration from './components/login/registrationpage3';
 import Companyregistration from './components/login/registrationpage2';
 import { Router, Route, Routes, BrowserRouter } from 'react-router-dom';
+import Recruiter_Dashboard from './components/recruiter-dashboard/recruiter-dashboard';
 import { useEffect } from 'react';
 import Input from './components/library/input.jsx';
 import Input2 from './components/library/input2.jsx';
@@ -46,11 +47,14 @@ function App() {
           <Route path="/dashboard" element={<Student_dashboard />} />
           <Route path="/libhome" element={<Home />} />
           <Route path="/input2" element={<Input2 />} />
+          <Route path="/chat" element={<ChatApp />} />
+          <Route path="/exp" element={<Experience />} />
+          <Route path="/dashboard" element={<Student_dashboard />} />
+          <Route path="/libhome" element={<Home />} />
+          <Route path="/tpo" element={<Recruiter_Dashboard />} />
         </Routes>
-      </BrowserRouter>
-
-
-    </div>
+    </BrowserRouter>
+    </div >
 
   );
 }
