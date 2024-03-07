@@ -15,37 +15,40 @@ import Experience from './components/library/inexpe';
 import ChatApp from './components/chat/chat.jsx';
 import Collegeregistration from './components/login/registrationpage3';
 import Companyregistration from './components/login/registrationpage2';
-import {  Router, Route, Routes, BrowserRouter } from 'react-router-dom';
+import { Router, Route, Routes, BrowserRouter } from 'react-router-dom';
 import { useEffect } from 'react';
-
+import Input from './components/library/input.jsx';
+import Input2 from './components/library/input2.jsx';
 
 
 function App() {
-  useEffect(()=>{
-    
+  useEffect(() => {
+
     localStorage.setItem("events", JSON.stringify(data));
-  },[])
+  }, [])
 
   return (
 
     // <Landing_page />
-    
+
     <div className="App">
       <BrowserRouter>
-      <Routes>
-         <Route path="/companyr" element= {<Companyregistration/>} />
-         <Route path="/colleger" element= {<Collegeregistration/>} />
-         <Route path="/studentr" element= {<Studentregistration/>} />
-         <Route path="/events" element= {<Events/>} />
-         <Route path="/" element= {<Landing_page/>} />
+        <Routes>
+          <Route path="/companyr" element={<Companyregistration />} />
+          <Route path="/colleger" element={<Collegeregistration />} />
+          <Route path="/studentr" element={<Studentregistration />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/" element={<Landing_page />} />
+          <Route path="/input" element={<Input />} />
+          <Route path="/navbar" element={<Navbar />} />
+          <Route path="/chat" element={<ChatApp />} />
+          <Route path="/exp" element={<Experience />} />
+          <Route path="/dashboard" element={<Student_dashboard />} />
+          <Route path="/libhome" element={<Home />} />
+          <Route path="/input2" element={<Input2 />} />
+        </Routes>
+      </BrowserRouter>
 
-         <Route path="/chat" element= {<ChatApp/>} />
-         <Route path="/exp" element= {<Experience/>} />
-         <Route path="/dashboard" element= {<Student_dashboard/>} />
-         <Route path="/libhome" element= {<Home/>} />
-      </Routes>
-     </BrowserRouter>
-      
 
     </div>
 
