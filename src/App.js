@@ -18,8 +18,13 @@ import Companyregistration from './components/login/registrationpage2';
 import { Router, Route, Routes, BrowserRouter } from 'react-router-dom';
 import Recruiter_Dashboard from './components/recruiter-dashboard/recruiter-dashboard';
 import { useEffect } from 'react';
+
+import Landing_page_second from './components/landing-page-second/landing-page-second.jsx';
+
+
 import Input from './components/library/input.jsx';
 import Input2 from './components/library/input2.jsx';
+
 
 
 function App() {
@@ -34,6 +39,28 @@ function App() {
 
     <div className="App">
       <BrowserRouter>
+
+      <Routes>
+         <Route path="/companyr" element= {<Companyregistration/>} />
+         <Route path="/colleger" element= {<Collegeregistration/>} />
+         <Route path="/studentr" element= {<Studentregistration/>} />
+         <Route path="/events" element= {<Events/>} />
+         <Route path="/" element= {<Landing_page/>} />
+
+         <Route path="/chat" element= {<ChatApp/>} />
+         <Route path="/exp" element= {<Experience/>} />
+         <Route path="/dashboard" element= {<Student_dashboard/>} />
+         <Route path="/libhome" element= {<Home/>} />
+
+         <Route path="/tpo" element= {<Recruiter_Dashboard />} />
+         <Route path="/landing_2" element= {<Landing_page_second />} />
+
+
+      </Routes>
+     </BrowserRouter>
+      
+    </div>
+
         <Routes>
           <Route path="/companyr" element={<Companyregistration />} />
           <Route path="/colleger" element={<Collegeregistration />} />
@@ -55,6 +82,7 @@ function App() {
         </Routes>
     </BrowserRouter>
     </div >
+
 
   );
 }
