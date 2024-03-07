@@ -2,11 +2,25 @@ import * as React from 'react'
 import './student-dashboard.css'
 import { useState } from 'react';
 import Calendar from 'react-calendar';
-import 'react-calendar/dist/Calendar.css';    
+import 'react-calendar/dist/Calendar.css';  
+import ChatApp from '../chat/chat'; 
+import { IoChatboxEllipsesOutline } from "react-icons/io5"; 
 
+
+const PopUpComponent = ({ onClose }) => {
+    return (
+        <ChatApp />
+       
+    );
+   };
 function Student_dashboard() {
    
         const [value, onChange] = useState(new Date());
+        const [isPopUpVisible, setIsPopUpVisible] = useState(false);
+
+ const togglePopUp = () => {
+    setIsPopUpVisible(!isPopUpVisible);
+ };
     return (
         <div className=''>
             <div className="student-dashboard-cont">
@@ -34,6 +48,10 @@ function Student_dashboard() {
                         </div>
                     </div>
                 </div>
+                <div className="chat">
+                 <button onClick={togglePopUp}><IoChatboxEllipsesOutline size={30} color='cyan'/></button>
+      {isPopUpVisible && <PopUpComponent onClose={togglePopUp} />}
+      </div>
                 <div className="companies-visited">
                     <h2>Companies visiting in upcoming week</h2>
                     <hr />
@@ -62,8 +80,11 @@ function Student_dashboard() {
                             <p>Autodesk</p>
                         </div>
                     </div>
+                   
                 </div>
+                
             </div>
+            
         </div>
     );
 }
