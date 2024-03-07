@@ -3,6 +3,7 @@ import Landing_page_second from '../landing-page-second/landing-page-second';
 import './landing_page.css';
 
 
+
 function Landing_page() {
   return (
     <div>
@@ -22,7 +23,6 @@ function Landing_page() {
           </nav>
         </div>
       </div>
-
       <div className="flex justify-center content-center">
         <div class="bg-white flex relative z-20 items-center overflow-hidden ml-5">
           <div class="mx-auto px-6 flex relative py-16">

@@ -4,7 +4,7 @@
     grid-template-rows: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
-    background-color: #086972;
+    background: linear-gradient(to right, #086972, #4dd6c0);
 }
 
 .calendar{
