@@ -15,6 +15,7 @@ import Experience from './components/library/inexpe';
 import ChatApp from './components/chat/chat.jsx';
 import Collegeregistration from './components/login/registrationpage3';
 import Companyregistration from './components/login/registrationpage2';
+import Recruiter_Dashboard from './components/recruiter-dashboard/recruiter-dashboard';
 import {  Router, Route, Routes, BrowserRouter } from 'react-router-dom';
 import { useEffect } from 'react';
 
@@ -43,6 +44,8 @@ function App() {
          <Route path="/exp" element= {<Experience/>} />
          <Route path="/dashboard" element= {<Student_dashboard/>} />
          <Route path="/libhome" element= {<Home/>} />
+
+         <Route path="/tpo" element= {<Recruiter_Dashboard />} />
       </Routes>
      </BrowserRouter>
       
