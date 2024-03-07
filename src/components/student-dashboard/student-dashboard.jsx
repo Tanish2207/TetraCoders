@@ -1,18 +1,27 @@
 import * as React from 'react'
 import './student-dashboard.css'
-import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
-import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-import { DateCalendar } from '@mui/x-date-pickers/DateCalendar';
+import { useState } from 'react';
+import Calendar from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';  
+ 
+
+
+
 function Student_dashboard() {
+   
+        const [value, onChange] = useState(new Date());
+        
+
+
+ 
     return (
-        <div>
+        <div className=''>
             <div className="student-dashboard-cont">
                 <div className="calendar">
 
-                    <LocalizationProvider dateAdapter={AdapterDayjs}>
-                        <DateCalendar />
-                    </LocalizationProvider>
 
+                <Calendar onChange={onChange} showWeekNumbers value={value} />
+      
 
                 </div>
 
@@ -32,36 +41,16 @@ function Student_dashboard() {
                         </div>
                     </div>
                 </div>
-                <div className="companies-visited">
-                    <h2>Companies visiting in upcoming week</h2>
-                    <hr />
-                    <div className="company-logo-cont">
-                        <div className="company-logo">
-                            <img src="/Autodesk-logo.png" alt="" width="34%" />
-                            <p>Autodesk</p>
-                        </div>
-                        <div className="company-logo">
-                            <img src="/Autodesk-logo.png" alt="" width="34%" />
-                            <p>Autodesk</p>
-                        </div><div className="company-logo">
-                            <img src="/Autodesk-logo.png" alt="" width="34%" />
-                            <p>Autodesk</p>
-                        </div><div className="company-logo">
-                            <img src="/Autodesk-logo.png" alt="" width="34%" />
-                            <p>Autodesk</p>
-                        </div><div className="company-logo">
-                            <img src="/Autodesk-logo.png" alt="" width="34%" />
-                            <p>Autodesk</p>
-                        </div><div className="company-logo">
-                            <img src="/Autodesk-logo.png" alt="" width="34%" />
-                            <p>Autodesk</p>
-                        </div><div className="company-logo">
-                            <img src="/Autodesk-logo.png" alt="" width="34%" />
-                            <p>Autodesk</p>
-                        </div>
-                    </div>
+                
+                <div className="contributions">
+                    <h1>Contributions</h1>
+                   
+                    
+                   
                 </div>
+                
             </div>
+            
         </div>
     );
 }
