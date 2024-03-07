@@ -1,0 +1,89 @@
+
+.recr-dash-cont{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    background-color: #086972;
+}
+
+.calendar{
+    background-color: transparent;
+    
+}
+.upcoming-interviews-cont{
+    grid-row: 1/ span 2;
+    grid-column: 2;
+    align-self: flex-start;
+    /* justify-self: flex-start; */
+    color: white;
+    background-color: #b892ff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 4% 0 0 4% ;
+}
+
+.upcoming-interviews-cont h3 {
+    color: #3E3E3E;
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: "Poppins";
+    margin-bottom: 1.3rem;
+}
+
+.upcoming-interviews-cont h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #0E66B8;
+}
+
+.upcoming-interviews-cont span {
+    color: #FF710F;
+}
+
+.upcoming-interviews-cont p {
+    font-weight: 800;
+}
+
+.selected-candidates-cont{
+    background-color: #ffc2e2;
+    width: 70%;
+    padding: 1rem 0;
+    border-radius: 1rem;
+}
+.selected-title{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.candidate-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: start;
+    margin: .4rem 1rem;
+}
+.mycandidate{
+    grid-column: 1/span 2;
+}
+@media only screen and (max-width: 768px)  {
+    .candidate-container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .recr-dash-cont{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .upcoming-interviews-cont {
+        grid-row: 1;
+        grid-column: 1;
+        border-radius: 0 0 4% 4% ;
+    }
+}
