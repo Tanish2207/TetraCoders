@@ -1,12 +1,14 @@
 import React from 'react'
 import Landing_page_second from '../landing-page-second/landing-page-second';
 import './landing_page.css';
+import Navdash from '../navbar_dash/navdash';
 
 
 
 function Landing_page() {
   return (
     <div>
+      <Navdash />
       <div id="header">
         <div className="container">
           <nav>
