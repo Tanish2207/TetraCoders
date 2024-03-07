@@ -12,10 +12,12 @@ import Collegeregistration from './components/login/registrationpage3';
 import { Router, Route, Routes, BrowserRouter } from 'react-router-dom';
 import Recruiter_Dashboard from './components/recruiter-dashboard/recruiter-dashboard';
 import { useEffect } from 'react';
-import Navdash from './components/navbar_dash/navdash.js
+import Navdash from './components/navbar_dash/navdash.jsx'
 import Landing_page_second from './components/landing-page-second/landing-page-second.jsx';
 import Input from './components/library/input.jsx';
 import Input2 from './components/library/input2.jsx';
+import Studentregistration from './components/login/registrationpage1.jsx';
+import Home from './components/library/home.jsx';
 
 
 
@@ -37,6 +39,7 @@ function App() {
            <Route path="/landing" element={<Landing_page_second />} />
            <Route path="/input" element={<Input />} />
            <Route path="/navbar" element={<Navbar />} />
+            <Route path="/navdash" element={<Navdash />} />
            <Route path="/chat" element={<ChatApp />} />
            <Route path="/exp" element={<Experience />} />
            <Route path="/dashboard" element={<Student_dashboard />} />
