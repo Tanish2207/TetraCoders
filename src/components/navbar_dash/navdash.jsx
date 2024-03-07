@@ -1,7 +1,7 @@
 import React from 'react';
 import './navdash.css'; // You can create a CSS file for styling
 
-const Navbar = () => {
+const Navdash = () => {
   return (
     <div className="navbar">
       <div className="left-icons">
@@ -21,6 +21,6 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navdash;
 
 
