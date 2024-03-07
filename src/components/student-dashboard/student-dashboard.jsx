@@ -3,8 +3,7 @@ import './student-dashboard.css'
 import { useState } from 'react';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';  
-import ChatApp from '../chat/chat'; 
-import { IoChatboxEllipsesOutline } from "react-icons/io5"; 
+ 
 
 
 
