@@ -18,6 +18,7 @@ import Companyregistration from './components/login/registrationpage2';
 import Recruiter_Dashboard from './components/recruiter-dashboard/recruiter-dashboard';
 import {  Router, Route, Routes, BrowserRouter } from 'react-router-dom';
 import { useEffect } from 'react';
+import Landing_page_second from './components/landing-page-second/landing-page-second.jsx';
 
 
 
@@ -46,6 +47,9 @@ function App() {
          <Route path="/libhome" element= {<Home/>} />
 
          <Route path="/tpo" element= {<Recruiter_Dashboard />} />
+         <Route path="/landing_2" element= {<Landing_page_second />} />
+
+
       </Routes>
      </BrowserRouter>
       
